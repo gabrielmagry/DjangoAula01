@@ -77,4 +77,3 @@ class DisciplinaOfertada(models.Model):
                 raise Exception('Id invalido')
 
             super(DisciplinaOfertada,self).save()
-

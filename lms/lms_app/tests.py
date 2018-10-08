@@ -47,7 +47,7 @@ class ProfessorTests(TestCase):
     '''
     devemos ter uma exception quando o professor vier sem login    
     '''
-    def ntest_02_sem_login(self):
+    def test_02_sem_login(self):
         professor = Professor()
         professor.nome='lucas'
         professor.celular='99999'
@@ -55,8 +55,8 @@ class ProfessorTests(TestCase):
         self.assertRaises(Exception,professor.save)
 
     '''
-    quando criamos um professor sem email, 
-    seu email deve ser a string 'email nao fornecido'
+    quando criamos um professor sem email, seu email deve ser 
+    a string 'email nao fornecido'
 
     O teste salva um professor sem email, carrega e verifica se ele vem
     com essa string no campo email
